@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
-import SignUpForm from '../../pages/SignupForm';
-import LoginForm from '../../pages/LoginForm';
+import SignUpForm from './SignupForm';
+import LoginForm from './LoginForm';
 
-import Auth from '../../utils/auth';
+import Auth from '../utils/auth';
 
 const AppNavbar = () => {
   // set modal display state
@@ -12,10 +12,10 @@ const AppNavbar = () => {
 
   return (
     <>
-      <Navbar bg='dark' variant='dark' expand='lg'>
+      <Navbar bg='light' variant='light' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
-            Google Books Search
+            PAGES - <em>A Book Search Engine Using Google Book API</em>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
